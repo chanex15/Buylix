@@ -1,0 +1,21 @@
+Buylix demo images — copy before zipping the theme.
+
+Copy these 8 files from the React preview build:
+  public/images/hero-car.png
+  public/images/car-black.png
+  public/images/car-bmw.jpg
+  public/images/car-toyota.jpg
+  public/images/car-mercedes.jpg
+  public/images/car-vw.jpg
+  public/images/car-audi.jpg
+  public/images/showroom.jpg
+
+…into this folder (wordpress-theme/assets/images/).
+
+Then zip the theme so that style.css is at the archive root:
+  cd wordpress-theme && zip -r ../buylix.zip . -x "*.DS_Store"
+  (Windows: select all files inside wordpress-theme → Send to → Compressed folder → rename to buylix.zip)
+
+Without these files the theme still works (built-in demo stock + CSS placeholders),
+but the hero and inventory photos will be empty until you add real car photos
+via Cars → Add New (featured image) in WordPress.
